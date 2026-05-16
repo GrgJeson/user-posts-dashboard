@@ -61,8 +61,7 @@ const CourseCard = ({
     );
   }
 
-  // Vertical cards for Upcoming/Ongoing
-  return (
+    return (
     <motion.div
       whileTap={{ scale: 0.98 }}
       className={cn(
@@ -73,12 +72,10 @@ const CourseCard = ({
       )}
     >
       <div className="flex flex-row items-start justify-between h-full">
-        {/* Vertical Text */}
         <div className="[writing-mode:vertical-lr] rotate-180 text-4xl font-black tracking-tighter opacity-80 h-full flex items-center">
           {title}
         </div>
 
-        {/* Content */}
         <div className="flex flex-col items-end justify-between h-full text-right max-w-[140px]">
           <p className="text-sm font-medium leading-tight text-gray-500 italic">
             {description}

@@ -23,7 +23,6 @@ export default function UserPostsPage({ params }: UserPostsPageProps) {
     const fetchData = async () => {
       try {
         setApiIsLoading(true);
-        // Fetch User and Posts in parallel
         const [postsRes, userRes] = await Promise.all([
           fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`),
           fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
@@ -34,7 +33,6 @@ export default function UserPostsPage({ params }: UserPostsPageProps) {
         const postsData = await postsRes.json();
         const userData = await userRes.json();
 
-        // Get local posts from localStorage
         const storedPosts = localStorage.getItem(`localPosts_${userId}`);
         const localPosts = storedPosts ? JSON.parse(storedPosts) : [];
 
@@ -51,11 +49,9 @@ export default function UserPostsPage({ params }: UserPostsPageProps) {
   }, [userId]);
 
   const handlePostAdded = (newPost: Post) => {
-    // Update State
     const updatedPosts = [newPost, ...posts];
     setPosts(updatedPosts);
 
-    // Update Local Storage
     const storedPosts = localStorage.getItem(`localPosts_${userId}`);
     const localPosts = storedPosts ? JSON.parse(storedPosts) : [];
     localStorage.setItem(`localPosts_${userId}`, JSON.stringify([newPost, ...localPosts]));

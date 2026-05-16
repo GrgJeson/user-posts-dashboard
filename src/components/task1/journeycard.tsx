@@ -21,7 +21,6 @@ const JourneyCard = ({ title, description, image, bgColor, className }: JourneyC
         className
       )}
     >
-      {/* Illustration */}
       <div className="relative z-10 w-1/3 flex justify-center items-center">
         <img 
           src={image} 
@@ -30,7 +29,6 @@ const JourneyCard = ({ title, description, image, bgColor, className }: JourneyC
         />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 w-2/3 pl-8 flex flex-col justify-center text-white">
         <h3 className="text-2xl font-bold mb-2 leading-tight">{title}</h3>
         <p className="text-sm opacity-90 leading-relaxed font-medium">
@@ -38,7 +36,6 @@ const JourneyCard = ({ title, description, image, bgColor, className }: JourneyC
         </p>
       </div>
 
-      {/* Arrow Icon */}
       <div className="absolute top-8 right-8">
         <motion.div 
           whileHover={{ rotate: 45 }}

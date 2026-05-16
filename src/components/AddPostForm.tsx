@@ -24,7 +24,7 @@ export default function AddPostForm({ userId, onPostAdded }: AddPostFormProps) {
     const newPost = {
       title,
       body,
-      id: Date.now(), // Local ID
+      id: Date.now(),
       userId,
     };
 

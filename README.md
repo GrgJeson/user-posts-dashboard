@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SkillShikshya - Frontend Developer Task
 
-## Getting Started
+This repository contains my submission for the Frontend Developer assessment. I have built a unified application that showcases both my UI/UX implementation skills and my ability to handle logical data fetching and state management.
 
-First, run the development server:
+## 🚀 Live Demo
+**[Live Project Link](https://user-posts-dashboard-iota.vercel.app)**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Data Source**: JSONPlaceholder API
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📋 Tasks Overview
 
-## Learn More
+### Task 1 & 2: Pixel-Perfect UI Implementation
+I have replicated the provided UI designs using a component-based approach. 
+- **Task 1**: A clean, responsive landing page section with hover-animated cards.
+- **Task 2 UI**: A dashboard-style course overview with dynamic card layouts.
 
-To learn more about Next.js, take a look at the following resources:
+### Task 2 (Logical): User & Posts Dashboard
+A functional dashboard that interacts with a public API to manage user data.
+- **User Discovery**: Instant client-side search by name or email.
+- **Post Management**: Deep linking to user-specific posts with local persistence.
+- **Interactive Form**: Ability to add new posts, validated and stored in `localStorage` to persist across refreshes.
+- **UX Excellence**: Comprehensive handling of loading and error states for a smooth user experience.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ⚙️ How to Run Locally
 
-## Deploy on Vercel
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/GrgJeson/user-posts-dashboard.git
+   ```
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+4. **Open the browser**:
+   Navigate to `http://localhost:3000`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 Personal Notes
+During this task, I focused on creating a unified experience. By migrating the initial Vite tasks into the Next.js environment, I ensured a seamless navigation experience for the reviewer while meeting the strict technical requirements for the logical task.

@@ -10,6 +10,13 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  --color-brand-green: #008060;
+  --color-brand-red: #F05A61;
+  --color-brand-teal: #49A39A;
+  --color-brand-purple: #6A5AE0;
+  --color-brand-gold: #A68A5E;
+  --color-card-light: #FFF5F5;
 }
 
 @media (prefers-color-scheme: dark) {
